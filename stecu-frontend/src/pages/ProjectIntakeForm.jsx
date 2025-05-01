@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProjectIntakeForm = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     description: "",
     tech: "",
@@ -83,6 +85,8 @@ const ProjectIntakeForm = () => {
       console.error(err);
       setMessage({ text: "There was an error submitting your request. Please try again later.", type: "error" });
     }
+
+    navigate('/estimate');
   };
 
   return (

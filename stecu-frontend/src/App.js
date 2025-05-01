@@ -12,6 +12,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ClientRegistrationForm from './pages/ClientRegistrationForm'; 
 import ProjectIntakeForm from './pages/ProjectIntakeForm';
+import Estimation from './pages/Estimation';
+
 
 function LandingPage() {
   return (
@@ -33,6 +35,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/register" element={<ClientRegistrationForm />} />
         <Route path="/project" element={<ProjectIntakeForm />} />
+        <Route path="/estimate" element={<Estimation />} />
       </Routes>
     </Router>
   );
