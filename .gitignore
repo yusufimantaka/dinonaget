@@ -26,4 +26,5 @@ node_modules
 
 .env
 **/.env
+*/credentials-1.json
 
