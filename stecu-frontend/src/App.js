@@ -1,11 +1,19 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import ClientRegistrationForm from './pages/ClientRegistrationForm'; 
+import ProjectIntakeForm from './pages/ProjectIntakeForm';
 
-function App() {
+function LandingPage() {
   return (
     <div className="bg-black text-white font-jakarta">
       <Navbar />
@@ -14,8 +22,19 @@ function App() {
       <Services />
       <Projects />
       <Contact />
-      {/* About, Services, Projects, Contact will go here next */}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/register" element={<ClientRegistrationForm />} />
+        <Route path="/project" element={<ProjectIntakeForm />} />
+      </Routes>
+    </Router>
   );
 }
 

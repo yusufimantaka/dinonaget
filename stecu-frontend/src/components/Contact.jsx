@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
   
         <div className="text-center mt-8 text-sm text-white/80">
-          Copyright © 2023 · OmahTI UGM
+          Copyright © 2025 · OmahTI UGM
         </div>
       </footer>
     );

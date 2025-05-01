@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState('about');
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,14 +31,10 @@ const Navbar = () => {
   return (
     <div className="w-full flex justify-center mt-4 fixed top-0 z-50">
       <nav className="flex items-center justify-between w-[90%] px-6 py-3 bg-customGray text-white rounded-2xl shadow-lg">
-        
-        {/* Left: Logo and Brand */}
         <div className="flex items-center gap-2">
           <img src="/logo.png" alt="OmahTI" className="h-8 w-8 object-contain" />
           <span className="font-semibold text-lg">OmahTI</span>
         </div>
-
-        {/* Right: Navigation */}
         <div className="flex items-center gap-6 text-sm">
           {['about', 'services', 'projects'].map((section) => (
             <button
@@ -49,7 +47,10 @@ const Navbar = () => {
               {section}
             </button>
           ))}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg">
+          <button
+            onClick={() => navigate('/register')}
+            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg"
+          >
             Register as Client
           </button>
         </div>
