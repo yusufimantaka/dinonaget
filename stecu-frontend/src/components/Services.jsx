@@ -26,18 +26,13 @@ const Services = () => {
       <section id='services' className="bg-customGray text-white py-20 px-6">
         <div className="max-w-[1440px] mx-auto space-y-16">
           {/* Top Section */}
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="text-center">
             <div>
-              <h2 className="text-white text-sm font-semibold mb-2">
-                Our <span className="text-orange-500">Services</span>
-              </h2>
               <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-                At <span className="text-orange-500">OmahTI</span> we provide an abundance of services.
+                Our <span className="text-orange-500">Services</span>
               </h3>
-            </div>
-            <div>
-              <p className="text-gray-300">
-                We turn ideas into innovation. Our services are designed to not only meet your needs, but to exceed your expectations — helping you build a strong digital presence and achieve long-term success.
+              <p className="text-gray-300 text-sm md:text-base max-w-[600px] mx-auto mb-6">
+                We offer a wide range of services to help you achieve your digital goals. From data science to mobile app development, we have the expertise to bring your ideas to life.
               </p>
             </div>
           </div>
