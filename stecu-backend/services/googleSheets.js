@@ -4,7 +4,7 @@ const path = require('path');
 const SPREADSHEET_ID = "1EzNw31a1gepyEr-9UBkci_AHupsNgEuxz4_DpxooSBc"; // We'll set this later
 
 const auth = new google.auth.GoogleAuth({
-  keyFile: path.join(__dirname, '../credentials.json'),
+  keyFile: path.join(__dirname, '../credentials-1.json'),
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
