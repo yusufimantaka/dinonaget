@@ -39,24 +39,17 @@ const ClientRegistrationForm = () => {
       return;
     }
 
-    // Save to session storage
     Object.entries(form).forEach(([key, value]) =>
       sessionStorage.setItem(key, value)
     );
 
-    // Navigate to the next page
     navigate('/project');
   };
 
   return (
-    <div className="bg-zinc-900 min-h-screen text-white font-sans">
-      <button
-        className="mt-8 ml-24 px-4 py-2 border-2 border-white rounded-md"
-        onClick={() => navigate("/")}>
-          Back
-      </button>
-      <h2 className="text-center text-sm mt-12">OmahTI UGM</h2>
-      <h1 className="text-center text-2xl font-bold mb-8">Client Registration Form</h1>
+    <div className="min-h-screen bg-customGray text-white font-jakarta flex flex-col items-center pt-20">
+      <h2 className="pt-20 text-sm">OmahTI UGM</h2>
+      <h1 className="text-2xl font-bold mb-8">Client Registration Form</h1>
 
       <div className="flex justify-center items-center mb-5 gap-2">
         <div className="border-2 border-white px-4 py-2 rounded-md bg-orange-500">Company Information</div>
@@ -64,8 +57,8 @@ const ClientRegistrationForm = () => {
         <div className="border-2 border-white px-4 py-2 rounded-md">Project Information</div>
       </div>
 
-      <div className="bg-zinc-800 border border-white rounded-lg w-[65%] max-w-3xl mx-auto p-10 mt-10">
-        <p className="text-center text-sm mb-8">
+      <div className="bg-customGrayLight border border-white rounded-lg w-[90%] max-w-3xl p-10">
+        <p className="text-center text-l mb-8">
           Let's get started with your project. Fill in your company details first.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -91,10 +84,17 @@ const ClientRegistrationForm = () => {
             </div>
           ))}
 
-          <div className="flex justify-end mt-6">
+          <div className="flex justify-between mt-6">
+            <button
+              type="button"
+              onClick={() => navigate(-1)}
+              className="bg-customGray text-white px-6 py-2 rounded-md border-white border-2"
+            >
+              Back
+            </button>
             <button
               type="submit"
-              className="bg-orange-500 text-white px-6 py-2 rounded-md"
+              className="bg-orange-500 text-white px-6 py-2 rounded-md border-white border-2"
             >
               Next
             </button>

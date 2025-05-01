@@ -14,29 +14,30 @@ import ClientRegistrationForm from './pages/ClientRegistrationForm';
 import ProjectIntakeForm from './pages/ProjectIntakeForm';
 import Estimation from './pages/Estimation';
 
-
 function LandingPage() {
   return (
-    <div className="bg-black text-white font-jakarta">
-      <Navbar />
+    <>
       <Hero />
       <About />
       <Services />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/register" element={<ClientRegistrationForm />} />
-        <Route path="/project" element={<ProjectIntakeForm />} />
-        <Route path="/estimate" element={<Estimation />} />
-      </Routes>
+      <div className="bg-black text-white font-jakarta">
+        <Navbar /> {/* Navbar now always rendered */}
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/register" element={<ClientRegistrationForm />} />
+          <Route path="/project" element={<ProjectIntakeForm />} />
+          <Route path="/estimate" element={<Estimation />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
