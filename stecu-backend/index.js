@@ -10,17 +10,7 @@ const { saveSubmission } = require('./services/googleSheets');
 dotenv.config();
 
 const app = express();
-const corsOptions = {
-    origin: 'https://dinonaget.vercel.app', // ✅ Your deployed frontend
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type']
-  };
-  
-  app.use(cors(corsOptions));
-  
-  // ✅ Handle preflight OPTIONS requests explicitly
-  app.options('*', cors(corsOptions));
-  
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
