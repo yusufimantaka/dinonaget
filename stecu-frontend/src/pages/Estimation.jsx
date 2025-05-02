@@ -74,14 +74,19 @@ export default function Estimate() {
 
         {/* Description */}
         <p className="text-center text-sm text-gray mb-6 max-w-md mx-auto">
-          You can contact us or we will reach out to you within 1×24 hours to discuss further and ensure the project.
+          This price is just an estimation. You can contact us or we will reach out to you within 1×24 hours to discuss further and ensure the project.
         </p>
 
         {/* CTA Button */}
         <div className="w-full max-w-lg mx-auto">
-          <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md transition">
+          <a
+            href="https://wa.me/628990221068"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md transition flex justify-center"
+          >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </div>

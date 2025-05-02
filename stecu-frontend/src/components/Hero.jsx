@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom"; 
+
 const Hero = () => {
+  const navigate = useNavigate(); 
+
   return (
     <section className="relative h-[852px] text-white overflow-hidden">
       
@@ -27,8 +31,12 @@ const Hero = () => {
             Join an experience that grows your voice and sharpens your mind.
           </p>
           <div className="flex gap-4 mt-6">
-            <button className="bg-white text-black px-5 py-2 rounded shadow">See Estimated Price</button>
-            <button className="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600">Project Proposal</button>
+            <button
+              className="bg-white text-black px-5 py-2 rounded shadow"
+              onClick={() => navigate("/register")}
+            >
+              See Estimated Price
+            </button>
           </div>
         </div>
       </div>
