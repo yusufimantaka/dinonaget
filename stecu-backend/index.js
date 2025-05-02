@@ -12,7 +12,7 @@ const app = express();
 // ✅ Full CORS config for Vercel + Railway
 const corsOptions = {
   origin: 'https://dinonaget.vercel.app', // ✅ Your actual frontend domain
-  methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type']
 };
 
