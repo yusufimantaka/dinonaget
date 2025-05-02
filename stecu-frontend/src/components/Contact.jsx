@@ -1,12 +1,12 @@
 const Contact = () => {
     return (
-      <footer className="bg-orange-500 text-white py-16 px-6">
+      <footer className="bg-customGrayDark text-white py-16 px-6">
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           
           {/* Left: Logo + Address */}
           <div>
             <div className="flex items-center mb-4">
-              <img src="/logo.png" alt="OmahTI" className="h-10 w-10 mr-2" />
+              <img src="/logo.png" alt="OmahTI" className="h-10 w-auto mr-2" />
             </div>
             <p className="max-w-md leading-relaxed">
               Departemen Ilmu Komputer dan Elektronika<br />

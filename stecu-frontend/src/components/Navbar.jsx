@@ -32,8 +32,7 @@ const Navbar = () => {
     <div className="w-full flex justify-center mt-4 fixed top-0 z-50">
       <nav className="flex items-center justify-between w-[90%] px-6 py-3 bg-customGray text-white rounded-2xl shadow-lg">
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="OmahTI" className="h-8 w-8 object-contain" />
-          <span className="font-semibold text-lg">OmahTI</span>
+          <img onClick={() => navigate('/')} src="/logo.png" alt="OmahTI" className="h-15 w-28 object-contain" />
         </div>
         <div className="flex items-center gap-6 text-sm">
           {['about', 'services', 'projects'].map((section) => (
