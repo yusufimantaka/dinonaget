@@ -18,6 +18,8 @@ Inspired by donation breakdown tools on charity platforms, this solution lowers 
 5.  Revy Satya Gunawan
 
 #### **Case D, Project Management Division**
+- Project Officer : Yusuf Imantaka Bastari
+- Project Manager : Bayu Putra Ibana
 
 ## Table of Contents
 
