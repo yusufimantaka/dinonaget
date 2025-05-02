@@ -18,9 +18,14 @@ const Contact = () => {
   
           {/* Right: Contact Us Button */}
           <div>
-            <button className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-gray-100">
+            <a
+              href="https://wa.me/628990221068"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 inline-block"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
   
@@ -32,4 +37,3 @@ const Contact = () => {
   };
   
   export default Contact;
-  
