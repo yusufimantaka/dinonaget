@@ -174,7 +174,7 @@ const MultiStepRegistrationForm = () => {
 
     try {
       // Replace with your actual API endpoint
-      const res = await fetch("http://localhost:3001/api/submit", {
+      const res = await fetch("dinonaget-production.up.railway.app/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(combinedData),
